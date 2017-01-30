@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF">
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative"
+        android:background="@drawable/card_background"
+        android:paddingBottom="10sp"
+        android:elevation="10sp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circle_image"
+            android:layout_marginTop="15sp"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:layout_marginLeft="100sp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cliente"
+            android:layout_below="@+id/circle_image"
+            android:id="@+id/lbnombre"
+            android:layout_marginLeft="20sp" />
+
+        <TextView
+            android:id="@+id/lbdireccionorigen"
+            android:layout_below="@+id/lbnombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="direccion origen"
+            android:layout_marginLeft="20sp"
+            />
+
+        <TextView
+            android:id="@+id/barrio1"
+            android:text="barrio origen"
+            android:layout_below="@+id/lbdireccionorigen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            />
+
+        <TextView
+            android:id="@+id/lbdirecciondestino"
+            android:text="direccion destino"
+            android:layout_below="@+id/barrio1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            />
+
+        <TextView
+            android:id="@+id/barriodestino1"
+            android:text="barrio destino"
+            android:layout_below="@+id/lbdirecciondestino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            />
+
+        <TextView
+            android:id="@+id/descripcionaceptados"
+            android:text="descripcion"
+            android:layout_below="@+id/barriodestino1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            />
+
+        <Button
+            android:id="@+id/frgmapa"
+            android:layout_marginTop="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:background="@color/botonazul"
+            android:paddingTop="20dp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:text="VER EN MAPA"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/descripcionaceptados"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

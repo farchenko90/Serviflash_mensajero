@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFF">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/card_background"
+            android:elevation="10sp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="15sp"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                android:layout_marginLeft="100sp"
+                android:id="@+id/clienteimage"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:textSize="15sp"
+                android:text="tiempo"
+                android:layout_marginRight="10sp"
+                android:id="@+id/tiempo"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cliente"
+                android:layout_below="@+id/clienteimage"
+                android:id="@+id/lblNombres"
+                android:layout_marginLeft="20sp" />
+
+            <TextView
+                android:id="@+id/lbldireccionorigen"
+                android:layout_below="@+id/lblNombres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="direccion origen"
+                android:layout_marginLeft="20sp"
+                />
+
+            <TextView
+                android:id="@+id/barrio"
+                android:text="barrio origen"
+                android:layout_below="@+id/lbldireccionorigen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                />
+
+            <TextView
+                android:id="@+id/lbldirecciondestino"
+                android:text="direccion destino"
+                android:layout_below="@+id/barrio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                />
+
+            <TextView
+                android:id="@+id/barriodestino"
+                android:text="barrio destino"
+                android:layout_below="@+id/lbldirecciondestino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                />
+
+            <TextView
+                android:id="@+id/descripcion1"
+                android:text="descripcion"
+                android:layout_below="@+id/barriodestino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                />
+
+            <Button
+                android:id="@+id/aceptar"
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:background="@color/colorPrimary"
+                android:paddingTop="20dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:text="Aceptar Pedido"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/descripcion1"/>
+
+
+
+        </RelativeLayout>
+
+
+
+    <!--<RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative"
+        android:background="#ffffff"
+        android:paddingBottom="10sp"
+        >
+
+
+
+    </RelativeLayout>-->
+
+</LinearLayout>

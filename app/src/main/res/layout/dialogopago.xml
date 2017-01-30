@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="1000dp"
+    android:minHeight="365dp"
+    android:background="#ffff">
+
+    <TextView
+        android:id="@+id/info_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="20sp"
+        android:paddingTop="20sp"
+        android:text="@string/info_text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp" />
+
+
+    <EditText
+        android:id="@+id/pago"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info_text"
+        android:layout_marginLeft="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20sp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:hint="Pago Del Servicio"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cliente"
+        android:layout_marginLeft="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20sp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_border"
+        android:padding="16dp"
+        android:hint="Quien Recibe"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@+id/pago"/>
+
+    <Button
+        android:id="@+id/pagar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="24dp"
+        android:background="@color/colorPrimary"
+        android:paddingTop="20dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:text="Registrar Servicio"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/cliente"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
